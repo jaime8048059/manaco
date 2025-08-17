@@ -1,1 +1,23 @@
-<p>categorias works!</p>
+<h1>Lista de Categorias</h1>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of categorias">
+      <td>
+        {{ item.id }}
+      </td>
+      <td>
+        {{ item.nombre }}
+      </td>
+      <td>
+        {{ item.descripcion }}
+      </td>
+    </tr>
+  </tbody>
+</table>
